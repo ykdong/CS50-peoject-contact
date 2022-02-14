@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    My Friends
+{% endblock %}
+
+{% block main %}
+    <table class="table tablestriped">
+        <thead>
+            <tr>
+                <th class="text-strt">First Name</th>
+                <th class="text-strt">Last Name</th>
+                <th class="text-strt">Phone Number</th>
+                <th class="text-strt">E-Mail</th>
+                <th class="text-strt">address</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for friend in friends %}
+                <tr>
+                    <td class="text-strt">{{ friend.first_name }}</td>
+                    <td class="text-strt">{{ friend.last_name }}</td>
+                    <td class="text-strt">{{ friend.phone }}</td>
+                    <td class="text-strt">{{ friend.email }}</td>
+                    <td class="text-strt">{{ friend.address }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

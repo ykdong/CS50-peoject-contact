@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add Friends
+{% endblock %}
+
+{% block main %}
+    <div class="contact-div">
+      <form action="/newcontact" method="post">
+        <label for="fname">First Name</label>
+        <input autofocus autocomplete="off" type="text" id="fname" name="firstname" placeholder="First Name" />
+
+        <label for="fname">Last Name</label>
+        <input autofocus autocomplete="off" type="text" id="lname" name="lastname" placeholder="Last Name" />
+
+        <label for="fname">Phone Number</label>
+        <input autofocus autocomplete="off" type="text" id="phone" name="phone" placeholder="Phone Number" />
+
+        <label for="fname">E-Mail</label>
+        <input autofocus autocomplete="off" type="text" id="email" name="email" placeholder="E-Mail" />
+
+        <label for="fname">Address</label>
+        <input autofocus autocomplete="off" type="text" id="address" name="address" placeholder="Address" />
+
+        <input type="submit" value="ADD">
+
+      </form>
+    </div>
+{% endblock %}
